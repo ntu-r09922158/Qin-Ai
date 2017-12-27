@@ -1,0 +1,144 @@
+/* CSS Document */
+
+*{
+	margin: 0px 0px 0px 0px;
+}
+
+html,body{
+	/*height: 100%;*/
+	width: 1400px;
+	height: 1200px;
+}
+
+.content-width{
+	padding-top: 50px;
+	width: 1000px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid red;
+	height: 600px;
+}
+
+.header{
+	padding: 50px 150px 50px 150px;
+}
+
+.header1{
+	float: left;
+	width: 200px;
+}
+
+.header1 h1{
+	font-size:48px;
+}
+
+.header2{
+	float: right;/*right*/
+	padding-top: 30px;
+	width: 700px;
+}
+
+.header ul{
+	float: right;
+	/*margin-right: 50px;
+	margin-top: 50px;
+	border: 1px solid red;*/
+}
+
+.header ul li {
+	float: left;
+	margin: 0px 15px 0px 15px;
+	list-style-type: none;
+	/*display: inline;*/
+}
+					/*	Main Page start	*/
+.red-bg.content img{
+	/*padding-top: 50px 250px 0px 250px;
+	margin: 0px auto 0px auto;*/
+	width: 868px;
+	height: 486px;
+}
+
+.content2 p{
+	color: red;
+}
+
+.contentr{
+	padding: 50px 200px 0px 200px;
+}
+
+.content1{
+	padding: 50px 0px 50px 0px;
+}
+
+.content1 h1{
+	text-align: center;
+}
+
+.content2{
+	padding: 50px 0px 50px 0px;
+}
+
+.red-bg{
+	background-image: url("../images/red-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+							/*	Intro Page start	*/
+.orange-bg{
+	background-image: url("../images/orange-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.contento{
+	padding: 50px 200px 0px 250px;
+}
+.orange-bg img{
+	/*padding-top: 50px 250px 0px 250px;
+	margin: 0px auto 0px auto;*/
+	width: 960px;
+	height: 640px;
+}
+							/*	Service Page start	*/
+.yellow-bg{
+	background-image: url("../images/yellow-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+
+.contentse{
+	padding: 50px 200px 0px 250px;
+}
+							/*	Station Page start	*/
+.green-bg{
+	background-image: url("../images/green-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+.contentst{
+	padding: 50px 300px 0px 300px;
+}
+/*	Contact Page start	*/
+.blue-bg{
+	background-image: url("../images/blue-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+.contentct{
+	padding: 50px 300px 0px 300px;
+}
+.contentct table{
+	padding: 0px 0px 0px 200px;
+	width: 700px;
+	height: 400px;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Station</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script> 
+			$(document).ready(function(){
+				$("#1").mouseover(function(){ 
+				$("#1").animate({fontSize: '2em'}, "slow");
+				});
+				$("#1").mouseleave(function(){ 
+				$("#1").animate({fontSize: '1em'}, "slow");
+				});
+				
+				$("#2").mouseover(function(){ 
+				$("#2").animate({fontSize: '2em'}, "slow");
+				});
+				$("#2").mouseleave(function(){ 
+				$("#2").animate({fontSize: '1em'}, "slow");
+				});
+				
+				$("#3").mouseover(function(){ 
+				$("#3").animate({fontSize: '2em'}, "slow");
+				});
+				$("#3").mouseleave(function(){ 
+				$("#3").animate({fontSize: '1em'}, "slow");
+				});
+				
+				$("#4").mouseover(function(){ 
+				$("#4").animate({fontSize: '2em'}, "slow");
+				});
+				$("#4").mouseleave(function(){ 
+				$("#4").animate({fontSize: '1em'}, "slow");
+				});
+				
+				$("#5").mouseover(function(){ 
+				$("#5").animate({fontSize: '2em'}, "slow");
+				});
+				$("#5").mouseleave(function(){ 
+				$("#5").animate({fontSize: '1em'}, "slow");
+				});
+			});
+		</script>
+        <style> 
+		   #map { 
+			height: 600px; 
+			width: 800px; 
+			align: center;
+		   }
+    	</style> 
+    </head>
+    
+    <body>
+    	<div class="green-bg content-width">
+        	<div class="header">
+            	<div class="header1">
+                    <h1>Qin Ai</h1>
+                </div><!--	End of Header1-->
+                <div class="header2">
+                    <ul>
+                        <li><a href="index.html" id="1">MAIN</a></li>
+                        <li><a href="intro.html" id="2">INTRO</a></li>
+                        <li><a href="service.html" id="3">SERVICE</a></li>
+                        <li><a href="station.html" id="4">STATION</a></li>
+                        <li><a href="contact.php" id="5">CONTACT US</a></li>
+                    </ul>
+                </div><!--	End of Header2-->
+            </div><!--	End of Header-->
+            <div class="contentst">
+            	<div class="content1">
+                	<h1>Our Station</h1>
+                </div><!--	End of Content1-->
+                <div id="map"></div> 
+                <div class="content2">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;為了幫助他們我們有在一些地方設站點。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;大家可以把想要要捐給他們的物資投進站點的箱子裡。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+    我們會在每個月的25號，把物資收集、裝箱送給他們。</p>
+    			</div><!--	End of Content2-->
+    		</div><!--	End of Contentst-->
+        </div>
+			<script> 
+          		function initMap() { 
+    			 var fcu = {lat: 24.179, lng: 120.649}; 
+    			 var map = new google.maps.Map(document.getElementById('map'), {
+                	zoom: 16, 
+    				center: fcu, 
+    				mapTypeId: 'roadmap' 
+    			}); 
+    			 var marker = new google.maps.Marker({ 
+    				position: fcu, 
+    				 map: map 
+    			 }); 
+    			} 
+        	</script> 
+        	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpN6XKGK3nTPiP87DCvCJvgl3BDEhmQ0k &callback=initMap"> 
+    		</script> 
+    </body>
+</html>
