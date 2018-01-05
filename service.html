@@ -1,99 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
- 
-        <title>Service</title>
-        <link href="style/style.css" rel="stylesheet" type="text/css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--<link href="style.css" rel="stylesheet" type="text/css"><script src="jQuery.js"></script>-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script> 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-		<script> 
+		
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img class="navbar-brand" src="image/logo.png">
+				<a class="navbar-brand" href="#">Qin Ai</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDefault"
+						aria-controls="navbarExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>	
 			
 			
-			$(document).ready(function(){
+			<div class="navbar-collapse collapse " id="navbarExampleDefault" style>
+				<ul class="nav navbar-nav  mr-auto navbar-right">
+					<li class="nav item"><a href="index.html" id="1">Intro</a></li>
+					<li class="nav item"><a href="intro.html" id="2">About Us</a></li>
+					<li class="nav item"><a href="service.html" id="3">Service</a></li>
+					<li class="nav item"><a href="station.html" id="4">Station</a></li>
+					<li class="nav item"><a href="contact.html" id="5">Contact Us</a></li>
+					<li class="nav item">
+						<form class="form-inline my-2 my-lg-0" action="/action_page.php">
+							<div class="input-group">
+								<input type="text" class="form-control mr-sm-2" 
+									placeholder="Search" aria-label="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-default my-2 my-sm-0" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>	
+								</div>
+							</div>
+						</form>
+					</li>
+					<a href="service.html" id="a">中文</a>
+					<a href="serviceE.html" id="b">English</a>
+				</ul>	
+						
+					
 				
-				$("#1").mouseover(function(){ 
-				$("#1").animate({fontSize: '2em'}, "slow");
-				});
-				$("#1").mouseleave(function(){ 
-				$("#1").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#2").mouseover(function(){ 
-				$("#2").animate({fontSize: '2em'}, "slow");
-				});
-				$("#2").mouseleave(function(){ 
-				$("#2").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#3").mouseover(function(){ 
-				$("#3").animate({fontSize: '2em'}, "slow");
-				});
-				$("#3").mouseleave(function(){ 
-				$("#3").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#4").mouseover(function(){ 
-				$("#4").animate({fontSize: '2em'}, "slow");
-				});
-				$("#4").mouseleave(function(){ 
-				$("#4").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#5").mouseover(function(){ 
-				$("#5").animate({fontSize: '2em'}, "slow");
-				});
-				$("#5").mouseleave(function(){ 
-				$("#5").animate({fontSize: '1em'}, "slow");
-				});
-			});
-		</script>  
-        
-    </head>
-    
-    <body>
-    	
-    	<div class="yellow-bg content-width">
-        	<div class="header">
-            	<div class="header1">
-                	
-                    <h1>Qin Ai</h1>
-                </div><!--	End of Header1-->
-                
-                <div class="header2">
-                    <ul>
-                       
-                    		<li><a href="index.html" id="1">MAIN</a></li>
-                        
-                        	<li><a href="intro.html" id="2">INTRO</a></li>
-                        
-                        	<li><a href="service.html" id="3">SERVICE</a></li>
-                        
-                        	<li><a href="station.html" id="4">STATION</a></li>
-                       
-                        	<li><a href="contact.php" id="5">CONTACT US</a></li>
-                    </ul>
-                </div><!--	End of Header2-->
-            </div><!--	End of Header-->
-            <div class="contentse">
-            	<div class="content1">
-                	
-                	<h1>Our Service</h1>
-                </div><!--	End of Content1-->
-             <!--   <img src="images/main/mainpagephoto.jpg">-->
-                <div class="content2">
-                    
-                    <p align="center">我們提供的服務如下：</p>
-                    
-                    <ol id="service"></ol>
-    			</div><!--	End of Content2-->
-    		</div><!--	End of Contentse-->
-        </div><!--	End of yellow-bg-->
-      	
-        	
-    </body>
-    <script type="text/javascript" src="script/javascript.js">
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12"><h4 align="center">我們提供的服務如下：</h4></div>
+			<div class="col-md-2  col-sm-0"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12"><ol id="service"></ol></div>
+            <div class="col-md-2  col-sm-0"></div>
+		</div>
+	</div>	
+	
+  </body>
+  <script type="text/javascript" src="javascript.js">
 		
 	</script>
-   
 </html>

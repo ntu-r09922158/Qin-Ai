@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--<link href="style.css" rel="stylesheet" type="text/css"><script src="jQuery.js"></script>-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script> 
+
+		
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img class="navbar-brand" src="image/logo.png">
+				<a class="navbar-brand" href="#">Qin Ai</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDefault"
+						aria-controls="navbarExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>	
+			
+			
+			<div class="navbar-collapse collapse " id="navbarExampleDefault" style>
+				<ul class="nav navbar-nav  mr-auto navbar-right" >
+					<li class="nav item"><a href="index.html" id="1">Intro</a></li>
+					<li class="nav item"><a href="intro.html" id="2">About Us</a></li>
+					<li class="nav item"><a href="service.html" id="3">Service</a></li>
+					<li class="nav item"><a href="station.html" id="4">Station</a></li>
+					<li class="nav item"><a href="contact.html" id="5">Contact Us</a></li>
+					<li class="nav item">
+						<form class="form-inline my-2 my-lg-0" action="/action_page.php">
+							<div class="input-group">
+								<input type="text" class="form-control mr-sm-2" 
+									placeholder="Search" aria-label="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-default my-2 my-sm-0" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>	
+								</div>
+							</div>
+						</form>
+					</li>
+					<a href="contact.html" id="a">中文</a>
+					<a href="contactE.html" id="b">English</a>
+				</ul>	
+						
+					
+				
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+			<form class="form-horizontal" action="/action_page.php">
+			
+				
+				<div class="form-group row">
+					<div class="col-md-4 col-sm-2"></div>
+					<div class="col-md-4 col-sm-8">
+						<img class="img-responsive" src="image/logo.png"></div>
+					<div class="col-md-4 col-sm-2"></div>
+				</div>
+				
+				<div class="form-group row">
+					<div class="col-md-3 col-sm-0"></div>
+					<div class="col-md-1 col-sm-4">
+						<label class="control-label" for="title">Title:</label></div>
+					<div class="col-md-5 col-sm-8">
+						<input type="text" class="form-control" id="title" placeholder="Enter title" name="title"></div>
+					<div class="col-md-3 col-sm-0"></div>
+				</div>
+				
+				<div class="form-group row">
+					<div class="col-md-3 col-sm-0"></div>
+					<div class="col-md-1 col-sm-4">
+						<label class="control-label" for="msg">Message:</label> </div>
+					<div class="col-md-5 col-sm-8">
+						<input type="text" class="form-control" id="msg" placeholder="Enter message" name="msg"></div>
+					<div class="col-md-3 col-sm-0"></div>
+				</div>
+				
+				<div class="form-group row">   
+					<div class="col-md-3 col-sm-0"></div>		
+					<div class="col-md-1 col-sm-4">
+						<label class="control-label" for="email">Email:</label></div>	
+					<div class="col-md-5 col-sm-8">
+						<input type="email" class="form-control" id="email" placeholder="Reply email" name="email"></div>	
+					<div class="col-md-3 col-sm-0"></div>
+				</div>
+				
+				<div class="form-group row">        
+					<div class="col-md-5 col-sm-3"></div>
+					<div class=" col-md-2 col-sm-6">
+						<button type="submit" class="btn btn-default">Submit</button></div>
+					<div class="col-md-5 col-sm-3"> </div>
+				</div>
+			 </form>
+	</div>	
+	
+  </body>
+</html>

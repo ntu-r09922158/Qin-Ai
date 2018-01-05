@@ -1,76 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>QinAi</title>
-        <link href="style/style.css" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-		<script> 
-			$(document).ready(function(){
-				$("#1").mouseover(function(){ 
-				$("#1").animate({fontSize: '2em'}, "slow");
-				});
-				$("#1").mouseleave(function(){ 
-				$("#1").animate({fontSize: '1em'}, "slow");
-				});
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--<link href="style.css" rel="stylesheet" type="text/css"><script src="jQuery.js"></script>-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script> 
+
+		
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img class="navbar-brand" src="image/logo.png">
+				<a class="navbar-brand" href="#">Qin Ai</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDefault"
+						aria-controls="navbarExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>	
+			
+			
+			<div class="navbar-collapse collapse  navbar-right" id="navbarExampleDefault" style>
+				<ul class="nav navbar-nav  mr-auto">
+					<li class="nav item"><a href="index.html" id="1">Intro</a></li>
+					<li class="nav item"><a href="intro.html" id="2">About Us</a></li>
+					<li class="nav item"><a href="service.html" id="3">Service</a></li>
+					<li class="nav item"><a href="station.html" id="4">Station</a></li>
+					<li class="nav item"><a href="contact.html" id="5">Contact Us</a></li>
+					<li class="nav item">
+						<form class="form-inline my-2 my-lg-0" action="/action_page.php">
+							<div class="input-group">
+								<input type="text" class="form-control mr-sm-2" 
+									placeholder="Search" aria-label="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-default my-2 my-sm-0" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>	
+								</div>
+							</div>
+						</form>
+					</li>
+					<a href="index.html" id="a">中文</a>
+					<a href="indexE.html" id="a">English</a>
+				</ul>	
 				
-				$("#2").mouseover(function(){ 
-				$("#2").animate({fontSize: '2em'}, "slow");
-				});
-				$("#2").mouseleave(function(){ 
-				$("#2").animate({fontSize: '1em'}, "slow");
-				});
 				
-				$("#3").mouseover(function(){ 
-				$("#3").animate({fontSize: '2em'}, "slow");
-				});
-				$("#3").mouseleave(function(){ 
-				$("#3").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#4").mouseover(function(){ 
-				$("#4").animate({fontSize: '2em'}, "slow");
-				});
-				$("#4").mouseleave(function(){ 
-				$("#4").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#5").mouseover(function(){ 
-				$("#5").animate({fontSize: '2em'}, "slow");
-				});
-				$("#5").mouseleave(function(){ 
-				$("#5").animate({fontSize: '1em'}, "slow");
-				});
-			});
-		</script>
-    </head>
-    
-    <body>
-    	<div class="red-bg content-width">
-        	<div class="header">
-            	<div class="header1">
-                    <h1>Qin Ai</h1>
-                </div><!--	End of Header1-->
-                <div class="header2">
-                    <ul>
-                        <li><a href="index.html" id="1">MAIN</a></li>
-                        <li><a href="intro.html" id="2">INTRO</a></li>
-                        <li><a href="service.html" id="3">SERVICE</a></li>
-                        <li><a href="station.html" id="4">STATION</a></li>
-                        <li><a href="contact.php" id="5">CONTACT US</a></li>
-                    </ul>
-                </div><!--	End of Header2-->
-            </div><!--	End of Header-->
-            <div class="contentr">
-            	<div class="content1">
-                	<h1>Welcome to Our Page!</h1>
-                </div><!--	End of Content1-->
-                <img src="images/main/mainpagephoto.jpg">
-                <div class="content2">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;仁愛鄉位於臺灣南投縣東部，為該縣兩個山地原住民鄉的其中一個（另一個為信義鄉）。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;該鄉在戰後，由原來的臺中州能高郡直轄的蕃地所改制。本鄉的行政中心設於霧社，位居中央山脈之上，地勢高峻陡峭，觀光事業發達。境內居民以台灣原住民泰雅族、賽德克族、布農族為主，日治時期最大規模的原住民抗日事件—霧社事件，即發生於本鄉。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-    1950年外省移民隨著政府軍隊從泰緬邊境遷入仁愛鄉清境地區，開墾高山農場，建立眷村，因為當時該部隊主要是雲南省人為主，其中也有不少的雲南省的少數民族擺夷族人，所以也替本鄉引入雲南擺夷文化，進而與原住民文化揉和成為獨特的文化景貌。</p>
-    			</div><!--	End of Content2-->
-    		</div><!--	End of Content-->
-        </div><!--	End of Red-bg-->
-    </body>
+			</div>
+			
+		</div>
+	</nav>
+	<div class="container-fluid background">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-2  col-sm-0"></div>
+				<!--<img src="image/mainpagephoto.jpg" class="img-thumbnail col-md-8 col-sm-12" alt="sport field">-->
+				<div class="col-md-8 col-sm-12 embed-responsive embed-responsive-16by9">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vy7fHmDJBHw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-2  col-sm-0"></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12">
+				<h4><br>&nbsp;&nbsp;&nbsp;&nbsp;仁愛鄉位於臺灣南投縣東部，為該縣兩個山地原住民鄉的其中一個（另一個為信義鄉）。
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;該鄉在戰後，由原來的臺中州能高郡直轄的蕃地所改制。
+				本鄉的行政中心設於霧社，位居中央山脈之上，地勢高峻陡峭，觀光事業發達。
+				境內居民以台灣原住民泰雅族、賽德克族、布農族為主，日治時期最大規模的原住民抗日事件—霧社事件，即發生於本鄉。
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+					1950年外省移民隨著政府軍隊從泰緬邊境遷入仁愛鄉清境地區，開墾高山農場，建立眷村，因為當時該部隊主要是雲南省人為主，
+					其中也有不少的雲南省的少數民族擺夷族人，所以也替本鄉引入雲南擺夷文化，進而與原住民文化揉和成為獨特的文化景貌。</h4>
+				</div>
+			<div class="col-md-2  col-sm-0"></div>
+		</div>	
+		
+		<!--Start News-->
+		
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12">
+<blockquote>
+<h4>Christmas Day</h4><a>25 December 2017</a>
+<p>They have steamboat,
+BBQ.</p>
+</blockquote>
+			</div>
+			<div class="col-md-2  col-sm-0"></div>
+		</div>	
+		
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12">
+<blockquote class="blockquote-reverse">
+<h4>New Year Countdown</h4><a>31 December 2017</a>
+<p>They have gathering,
+dinner.</p>
+</blockquote>
+			</div>
+			<div class="col-md-2  col-sm-0"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-2  col-sm-0"></div>
+			<div class="col-md-8  col-sm-12">
+<blockquote>
+<h4>Chinese New Year</h4><a>15 January 2018</a>
+<p>They visit relative,sibling and friends' house, and give children angpao.</p>
+</blockquote>
+			</div>
+			<div class="col-md-2  col-sm-0"></div>
+		</div>
+		
+	</div>	
+  </body>
 </html>

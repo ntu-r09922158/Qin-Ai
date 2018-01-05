@@ -1,99 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Station</title>
-        <link href="style/style.css" rel="stylesheet" type="text/css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-		<script> 
-			$(document).ready(function(){
-				$("#1").mouseover(function(){ 
-				$("#1").animate({fontSize: '2em'}, "slow");
-				});
-				$("#1").mouseleave(function(){ 
-				$("#1").animate({fontSize: '1em'}, "slow");
-				});
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--<link href="style.css" rel="stylesheet" type="text/css"><script src="jQuery.js"></script>-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script> 
+	 <style>
+      #map{ height: 300px }
+    </style>
+		
+  </head>
+  
+  <body>
+	<nav class="navbar navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<img class="navbar-brand" src="image/logo.png">
+				<a class="navbar-brand" href="#">Qin Ai</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDefault"
+						aria-controls="navbarExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>	
+			
+			
+			<div class="navbar-collapse collapse " id="navbarExampleDefault" style>
+				<ul class="nav navbar-nav  mr-auto navbar-right">
+					<li class="nav item"><a href="index.html" id="1">Intro</a></li>
+					<li class="nav item"><a href="intro.html" id="2">About Us</a></li>
+					<li class="nav item"><a href="service.html" id="3">Service</a></li>
+					<li class="nav item"><a href="station.html" id="4">Station</a></li>
+					<li class="nav item"><a href="contact.html" id="5">Contact Us</a></li>
+					<li class="nav item">
+						<form class="form-inline my-2 my-lg-0" action="/action_page.php">
+							<div class="input-group">
+								<input type="text" class="form-control mr-sm-2" 
+									placeholder="Search" aria-label="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-default my-2 my-sm-0" type="submit">
+										<i class="glyphicon glyphicon-search"></i>
+									</button>	
+								</div>
+							</div>
+						</form>
+					</li>
+					<a href="station.html" id="a">中文</a>
+					<a href="stationE.html" id="b">English</a>
+				</ul>	
+						
+					
 				
-				$("#2").mouseover(function(){ 
-				$("#2").animate({fontSize: '2em'}, "slow");
-				});
-				$("#2").mouseleave(function(){ 
-				$("#2").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#3").mouseover(function(){ 
-				$("#3").animate({fontSize: '2em'}, "slow");
-				});
-				$("#3").mouseleave(function(){ 
-				$("#3").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#4").mouseover(function(){ 
-				$("#4").animate({fontSize: '2em'}, "slow");
-				});
-				$("#4").mouseleave(function(){ 
-				$("#4").animate({fontSize: '1em'}, "slow");
-				});
-				
-				$("#5").mouseover(function(){ 
-				$("#5").animate({fontSize: '2em'}, "slow");
-				});
-				$("#5").mouseleave(function(){ 
-				$("#5").animate({fontSize: '1em'}, "slow");
-				});
-			});
-		</script>
-        <style> 
-		   #map { 
-			height: 600px; 
-			width: 800px; 
-			align: center;
-		   }
-    	</style> 
-    </head>
-    
-    <body>
-    	<div class="green-bg content-width">
-        	<div class="header">
-            	<div class="header1">
-                    <h1>Qin Ai</h1>
-                </div><!--	End of Header1-->
-                <div class="header2">
-                    <ul>
-                        <li><a href="index.html" id="1">MAIN</a></li>
-                        <li><a href="intro.html" id="2">INTRO</a></li>
-                        <li><a href="service.html" id="3">SERVICE</a></li>
-                        <li><a href="station.html" id="4">STATION</a></li>
-                        <li><a href="contact.php" id="5">CONTACT US</a></li>
-                    </ul>
-                </div><!--	End of Header2-->
-            </div><!--	End of Header-->
-            <div class="contentst">
-            	<div class="content1">
-                	<h1>Our Station</h1>
-                </div><!--	End of Content1-->
-                <div id="map"></div> 
-                <div class="content2">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;為了幫助他們我們有在一些地方設站點。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;大家可以把想要要捐給他們的物資投進站點的箱子裡。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-    我們會在每個月的25號，把物資收集、裝箱送給他們。</p>
-    			</div><!--	End of Content2-->
-    		</div><!--	End of Contentst-->
-        </div>
-			<script> 
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-sm-0">
+			</div>
+			<div id="map" class="col-md-8 col-sm-12">
+			</div>
+			<div class="col-md-2 col-sm-0">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-2 col-sm-0">
+			</div>
+			<div class="col-md-8 col-sm-12">
+				<h4><br>&nbsp;&nbsp;&nbsp;&nbsp;為了幫助他們我們有在一些地方設站點。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;大家可以把想要要捐給他們的物資投進站點的箱子裡。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+					我們會在每個月的25號，把物資收集、裝箱送給他們。</h4>
+			</div>
+			<div class="col-md-2 col-sm-0">
+			</div>
+		</div>
+            
+		
+	
+		
+	</div>
+	
+	<script> 
           		function initMap() { 
     			 var fcu = {lat: 24.179, lng: 120.649}; 
+				 var yizhong = {lat: 24.149, lng: 120.684};
     			 var map = new google.maps.Map(document.getElementById('map'), {
-                	zoom: 16, 
+                	zoom: 12, 
     				center: fcu, 
     				mapTypeId: 'roadmap' 
     			}); 
-    			 var marker = new google.maps.Marker({ 
-    				position: fcu, 
-    				 map: map 
-    			 }); 
-    			} 
-        	</script> 
-        	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpN6XKGK3nTPiP87DCvCJvgl3BDEhmQ0k &callback=initMap"> 
-    		</script> 
-    </body>
+				var marker_0 = new google.maps.Marker({ 
+					  position: fcu, 
+					  map: map 
+					}); 
+				var marker_1 = new google.maps.Marker({ 
+					  position: yizhong, 
+					  map: map 
+					}); 
+    			
+				var infowindow_0 = new google.maps.InfoWindow({content: "逢甲大學圖書館<br>No. 100, Wenhua Road, Xitun District, Taichung City, 407"});
+				var infowindow_1 = new google.maps.InfoWindow({content: "一中街墊腳石書店<br>No. 88, Section 3, Sanmin Road, North District, Taichung City, 404"});
+				
+				marker_0.addListener('mouseover', function() {
+					infowindow_0.open(map, marker_0);
+					});
+				marker_0.addListener('mouseout', function() {
+					infowindow_0.close();
+					});
+				marker_1.addListener('mouseover', function() {
+					infowindow_1.open(map, marker_1);
+					});
+				marker_1.addListener('mouseout', function() {
+					infowindow_1.close();
+					});
+				}
+		</script> 
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpN6XKGK3nTPiP87DCvCJvgl3BDEhmQ0k &callback=initMap"> 
+    	</script> 
+	
+  </body>
+  
 </html>
