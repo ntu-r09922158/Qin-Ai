@@ -9,7 +9,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script> 
-
+	<link href="carousel_style.css" rel="stylesheet" type="text/css">
+	<script src="carousel.js"></script> 
 		
   </head>
   
@@ -56,15 +57,136 @@
 		</div>
 	</nav>
 	<div class="container">
-			<div class="row">
+			<!--<div class="row">
 				<div class="col-md-2  col-sm-0"></div>
-				<img src="image/intropagephoto.jpg" class="img-thumbnail col-md-8  col-sm-12" alt="about us">
-				<div class="col-md-2  col-sm-0"></div>
+				<img src="image/intropagephoto.jpg" class="img-thumbnail col-md-8  col-sm-12" alt="about us">col-xs-12-->
+				 <div class="row">
+					<div class="col-md-2  col-sm-0"></div>
+                    <div class="col-md-8  col-sm-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="image/hezhao0.jpg"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img src="image/hezhao1.jpg"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="image/hezhao2.jpg"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img src="image/hezhao3.jpg"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                        <img src="image/hezhao4.jpg"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                        <img src="image/hezhao5.jpg"></div>
+                                    </div><!-- Carousel nav -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                    </a>                                
+                                    </div>
+                            </div>
+<!--
+                            <div class="col-sm-4" id="carousel-text"></div>
+
+                            <div id="slide-content" style="display: none;">
+                                <div id="slide-content-0">
+                                    <h2>Slider One</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-1">
+                                    <h2>Slider Two</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-2">
+                                    <h2>Slider Three</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-3">
+                                    <h2>Slider Four</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-4">
+                                    <h2>Slider Five</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-5">
+                                    <h2>Slider Six</h2>
+                                    <p>Lorem Ipsum Dolor</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+					<div class="col-md-2  col-sm-0"></div>
+                </div><!--/Slider-->
+
+ <!--               <div class="row hidden-xs" id="slider-thumbs">
+                        Bottom switcher of slider
+                        <ul class="hide-bullets">
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="image/hezhao0.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="image/hezhao1.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="image/hezhao2.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="image/hezhao3.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="image/hezhao4.jpg"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="image/hezhao5.jpg"></a>
+                            </li>
+                        </ul>                 
+                </div>-->
+				<!--<div class="col-md-2  col-sm-0"></div>-->
 			</div>
 			<div class="row">
 				<div class="col-md-2  col-sm-0"></div>
-				<div class="col-md-8  col-sm-12"><h4><br>&nbsp;&nbsp;&nbsp;&nbsp;這是我們在親愛國小的合照。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;去仁愛鄉的幾個星期前就開始討論，交通、住宿、組員配合時間、拍攝活動、素材等等。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
-				抵達那裡可不容易啊。爬山涉水的，好像有點誇張。</h4></div>
+				<div class="col-md-8  col-sm-12">
+					<h4><br>&nbsp;&nbsp;&nbsp;&nbsp;在去之前，我們做過不少調查，但網路上相關的資料太少，只能直接去當地蒐集。
+													接著決定先找住宿的同時跟當地理事長聯絡，在確定好交通及時間後，發現最近的民宿已經被預訂滿了，
+													只好硬著頭皮向理事長諮詢住宿問題，而熱情的理事長竟立馬幫我們想辦法向教會借宿，
+													瞬間被理事長的熱情所感動，所以我們能成行真的要好好感謝理事長。
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;親愛約親愛的人 --- 仁愛鄉之旅 當腳踏在紮實的土壤，嗅到一股清香，看見鮮艷的綠和土黃交織... ...
+												這是另一個世界。白日裡單純可愛，夜裡詳和靜好，這裡是親愛村，村民親切可愛的部落。
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;在用單眼留下參訪的印記後，平靜的傍晚，我們向村裡大家長 --- 洪文全理事長，討教親愛村的相關文化。
+												理事長生動的表達分享，讓村子的每一部分都成為故事篇章，借宿之處的教會牧師，慷慨友善，
+												主動向我們提供各項可取材的活動資訊，也使得此行參訪內容更為豐富。
+				<br><br>&nbsp;&nbsp;&nbsp;&nbsp;在部落，交通對我們而言是最大的障礙，可在這相親相愛的村子，似乎沒什麼能阻擋“愛”發揮力量。
+												只因吃宵夜就認識的老闆，就這樣自然的對外地大學生流露“友愛”，一口答應用自家貨車充當交通工具。
+												清晨，坐上貨車，雲海就這樣呈在眼前，彷彿觸手可及，蜿蜒的山路雖然顛簸，但滿山滿路的景色，
+												讓人停不下按快門的指頭。可謂良辰美景，原來是這樣撞上視網膜，視覺的衝擊力度，真是無法意料。
+				<br><br></h4><h3 style="text-align:center">在親愛村，親的是人，愛的是自然，文化藏在每個孩子的笑中，也在每朵綻放的皎白中。</h3></div>
 				<div class="col-md-2  col-sm-0"></div>
 			</div>	
 	</div>
