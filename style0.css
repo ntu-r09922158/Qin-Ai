@@ -1,9 +1,68 @@
+*{
+	font-family: "微軟正黑體";
+}
+/*	index css*/
+.index p{
+	 font-size: 18px;
+}
+.index h2{
+	 font-style: bold;
+	 font-size: 30px;
+}
+.index h4{
+	 font-style: bold;
+	 font-size: 23px;
+}
 
+/*	intro css*/
+.intro p{
+	 font-size: 18px;
+}
+.intro h3{
+	 font-size: 28px;
+	 font-style: bold;
+	
+}
+
+/*	service css*/
+.serviceC ul{
+	margin-top:20px;
+}
+.serviceC li{
+	text-align:center;
+	font-size: 20px;
+	font-style: bold;
+	list-style:none;
+	margin:0px 20px 20px 20px;
+}
+.serviceC h4{
+	font-style: bold;
+	font-size: 23px;
+}
+.serviceC img{
+	width:200px;
+	height:200px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/*	station css*/
+.station p{
+	font-size: 18px;
+}
+
+/*	contact css*/
+.contact label{
+	font-size: 18px;
+}
+
+/*	footer css	*/
 .footer-bs {
     background-color: #e3f2fd;
 	padding: 60px 40px;
 	color: rgba(89,174,231,1.00);
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	border-bottom-right-radius: 6px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 6px;
