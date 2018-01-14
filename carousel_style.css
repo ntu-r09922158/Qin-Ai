@@ -4,3 +4,16 @@ list-style:none;
 margin-left: -40px;
 margin-top:20px;
 }
+
+.hide-corner img{
+	border-radius: 8px;
+}
+
+.left.carousel-control{
+		border-radius: 8px;
+}
+
+
+.right.carousel-control{
+		border-radius: 8px;
+}
