@@ -35,7 +35,7 @@
 					<li class="nav item"><a href="station.html" id="4">據點位置</a></li>
 					<li class="nav item"><a href="contact.php" id="5">聯繫我們</a></li>
 					<li class="nav item">
-						<form class="form-inline my-2 my-lg-0" action="/action_page.php">
+						<form class="form-inline my-2 my-lg-0" action="contact.php">
 							<div class="input-group">
 								<input type="text" class="form-control mr-sm-2" 
 									placeholder="搜索" aria-label="Search">

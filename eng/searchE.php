@@ -58,7 +58,7 @@
 	</nav>
 
 <div class="container">
-	<form action = "search.php" method="get">
+	<form action = "searchE.php" method="get">
 		<b>Please enter your search detail:</b><br><br>
 			&nbsp;&nbsp;&nbsp;Email: <input type = "text" name = "email" placeholder="xxx@gmail.com"><br><br>
 			&nbsp;&nbsp;&nbsp;Date: <input type = "text" name = "date" placeholder="yyyyMMdd">&nbsp;&nbsp;&nbsp;
@@ -87,7 +87,7 @@ if($_REQUEST["email"]!=NULL || $_REQUEST["date"]!=NULL ){
 	mysqli_query($conn, "SET NAMES UTF8");
 
 		if($email!=NULL && $date!=NULL )
-			$sql="select * from message where email='$email' and date='$date'";
+			$sql="select * from message where email='$email' and referno='$date'";
 		
 		if($email!=NULL && $date==NULL )
 			$sql="select * from message where email='$email'";

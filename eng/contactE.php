@@ -57,7 +57,7 @@
 		</div>
 	</nav>
 	<div class="container-fluid contact">
-			<form class="form-horizontal" action="contact.php">
+			<form class="form-horizontal" action="contactE.php">
 			
 				
 				<div class="form-group row">

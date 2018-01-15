@@ -59,13 +59,13 @@
 
 <div class="container">
 	<form action = "search.php" method="get">
-		<b>Please enter your search detail:</b><br><br>
-			&nbsp;&nbsp;&nbsp;Email: <input type = "text" name = "email" placeholder="xxx@gmail.com"><br><br>
-			&nbsp;&nbsp;&nbsp;Date: <input type = "text" name = "date" placeholder="yyyyMMdd">&nbsp;&nbsp;&nbsp;
-		<input type = "submit" value="Send">
+		<b>請輸入你的搜素資訊:</b><br><br>
+			&nbsp;&nbsp;&nbsp;電郵地址: <input type = "text" name = "email" placeholder="xxx@gmail.com"><br><br>
+			&nbsp;&nbsp;&nbsp;日期: <input type = "text" name = "date" placeholder="yyyyMMdd">&nbsp;&nbsp;&nbsp;
+		<input type = "submit" value="確定">
 			<br><br>
-		<b>Search Result:</b><br><br>
-		&nbsp;&nbsp;&nbsp;<u>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Email Address&nbsp&nbsp&nbsp;	Title&nbsp&nbsp&nbsp;	Message</u>
+		<b>搜索結果:</b><br><br>
+		&nbsp;&nbsp;&nbsp;<u>日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	電郵地址&nbsp&nbsp&nbsp;	標題&nbsp&nbsp&nbsp;	留言</u>
 	</form>
 
 <?php
@@ -87,7 +87,7 @@ if($_REQUEST["email"]!=NULL || $_REQUEST["date"]!=NULL ){
 	mysqli_query($conn, "SET NAMES UTF8");
 
 		if($email!=NULL && $date!=NULL )
-			$sql="select * from message where email='$email' and date='$date'";
+			$sql="select * from message where email='$email' and referno='$date'";
 		
 		if($email!=NULL && $date==NULL )
 			$sql="select * from message where email='$email'";
