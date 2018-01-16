@@ -25,6 +25,10 @@
 }
 
 /*	service css*/
+.serviceC p{
+	font-size: 18px;
+}
+
 .serviceC ul{
 	margin-top:20px;
 }
@@ -50,6 +54,11 @@
 /*	station css*/
 .station p{
 	font-size: 18px;
+}
+
+.station h4{
+	font-style: bold;
+	font-size: 23px;
 }
 
 /*	contact css*/
